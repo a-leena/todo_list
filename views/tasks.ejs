@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+    <div class="content">
+        <div id="addTasks">
+            <div class=addItems id="main_task">
+                <input type="text" name="main_task" id="task" class="new_item" placeholder="Main Task">
+                <button class="task_btn" id="subTaskBTN" name="subTaskBTN">Add Sub-task</button>
+            </div>
+            <div id="addSubTasks">
+            </div>
+            <button class="task_btn" id="mainTaskBTN" name="mainTaskBTN">Add Task</button>
+        </div>
+        <div class="todolist" id="tasklist">
+
+        </div>
+    </div>
+    <script src="scripts/tasks.js"></script>
+    </main>
+
+    <footer>
+        <p>Copyright © <%= year %>
+        </p>
+
+        <%- include("partials/footer.ejs") %>

@@ -1,0 +1,167 @@
+html {
+    background-color:rgb(211, 204, 237);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    width:100%;
+    margin: 25px;
+    font-size: large;
+}
+
+header ul {
+    display:flex;
+    align-items: center;
+    padding:0px;
+    list-style-type: none;
+}
+header ul li {
+    margin-right:25px;
+    
+}
+header ul li a {
+    text-decoration: none;
+    color:rgb(100, 30, 165);
+    padding:5px;
+    border-radius: 5px;
+}
+header ul li a:hover {
+    cursor:pointer;
+    background-color: white;
+    color:black;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    margin:10px;
+}
+
+h1 {
+    margin-bottom: 50px;
+    padding:25px;
+    width:auto;
+    background-color: rgb(150, 50, 245);
+    color:white;
+    border-radius: 10px;
+}
+
+.content{
+    display:block;
+    margin:10px;
+    padding:10px;
+    width:75%;
+    font-size: large;
+}
+
+.addItems {
+    display:flex;
+    border: 2px solid transparent;
+    padding:10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+.new_item {
+    background-color:transparent;
+    border:none;
+    height:40px;
+    width:90%;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.new_item:focus, .new_item:active{
+    outline:none;
+    border-bottom: 1px solid blue;
+}
+
+#main_task {
+    background-color: rgb(150, 50, 245);
+    color:white;
+}
+#task::placeholder {
+    color:rgba(255, 255, 255, 0.541);
+}
+
+.add_btn, .task_btn {
+    border:none;
+    background-color:dodgerblue;
+    color:white;
+}
+.add_btn{
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    font-size:xx-large;
+    font-weight: bolder;
+}
+.task_btn {
+    font-size:medium;
+    font-weight:bold;
+    padding:5px;
+    border-radius: 5px;
+}
+#mainTaskBTN {
+    margin-top:20px;
+}
+.add_btn,.task_btn,.delete {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.add_btn:hover,.task_btn:hover,.delete:hover {
+    cursor:pointer;
+}
+.add_btn:active,.task_btn:active,.delete:active {
+    transform: scale(0.80);
+}
+
+.todolist {
+    display:block;
+    /* text-align:center;  */
+}
+.item_div,.subtask_div {
+    border: 2px solid transparent;
+    border-top: 0.1px solid lightblue;
+    background-color:honeydew;
+    padding:20px 20px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    white-space: pre-line;
+    overflow: auto;
+}
+
+.task_div {
+    display:block;
+}
+
+.mainTaskHeading {
+    border-bottom:2px solid blue;
+}
+
+.checkbox {
+    width:20px;
+    height:20px;
+    margin-right:40px;
+}
+
+.item {
+    width:90%;
+}
+
+.delete {
+    background-color: transparent;
+    color: red;
+    font-size:larger;
+    font-weight: bolder;
+    border:none;
+    width:40px;
+    height:40px;
+}
+
+footer {
+    text-align: center;
+    font-size: smaller;
+    font-weight: lighter;
+    bottom:0%;
+}

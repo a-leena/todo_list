@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+        <h1>
+            <%= date_today %>
+        </h1>
+        <div class="content">
+            <div class="addItems">
+                <input type="text" name="new_item" id="new_item" class="new_item" placeholder="New Item">
+                <button id="add_btn" class="add_btn" name="add_btn">+</button>
+            </div>
+            <div id="todolist" class="todolist">
+            </div>
+        </div>
+        <script src="scripts/main.js"></script>
+    </main>
+    <footer>
+        <p>Copyright © <%= year %>
+        </p>
+        <%- include("partials/footer.ejs") %>
